@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="portfolio">
+<head>
+	<base href="/">
+	<title>olivya striloff // portfolio</title>
+		<!-- stylesheets: -->
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="libs/featherlight/featherlight.min.css"/>
+	<link rel="stylesheet" href="libs/animate.css"/>
+	<link rel="stylesheet" href="style.css" />
+	<!-- libraries: -->
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="libs/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="libs/velocity.min.js"></script>
+	<script type="text/javascript" src="libs/featherlight/featherlight.min.js"></script>
+	<!-- my scripts: -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="olivyastriloff.jpg" />
+	<meta name="p:domain_verify" content="ec146b6ef3981c380c49a22130a5f404"/>
+</head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64411124-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<body>
+	<header id="header" role="banner">
+		<img id="backsplash" class="absolute" src="img/backsplash.png"/>
+		<img id="name" class="absolute" src="img/name.png"/>
+		<ul class="nav absolute">
+			<li><a class="nav-links scrolly" id="nav-home" href="/home">HOME</a></li>
+			<li><a class="nav-links scrolly" id="nav-projects" href="/projects">PROJECTS</a></li>
+			<li><a class="nav-links scrolly" id="nav-about" href="/about">ABOUT</a></li>
+			<li><a class="nav-links scrolly" id="nav-resume" href="resume.pdf" target="blank">RESUME</a></li>
+			<li><a class="nav-links scrolly" id="nav-contact" href="/contact">CONTACT</a></li>
+			<div class="nav-border"></div>
+		</ul>
+	</header>
+
+	<div id="ngview" ng-view></div>
+
+	<footer id="footer">
+		&copy; 2015 Olivya Striloff. All rights reserved.<br/>
+		Any designs, artwork, and/or images found here may not be reproduced or redistributed without permission.
+	</footer>
+</body>
+</html>
